@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #e9e9e6;
+  gap: 30px;
 }
 .header {
   height: 130px;
@@ -58,8 +59,9 @@ body {
   border: rgb(255, 6, 6) solid 1px;
   flex-direction: column;
   display: flex;
-  width: 500px;
-  height: 450px;
+  width: 520px;
+  height: 480px;
+  gap: 5px;
 }
 
 .result {
@@ -73,7 +75,7 @@ body {
 }
 .calculatedResult {
   border: rgb(255, 6, 6) solid 1px;
-  height: 40px;
+  height: 30px;
   width: auto;
   margin: 0;
   padding: 0;
@@ -81,29 +83,39 @@ body {
 
 .currentInput {
   border: rgb(255, 6, 6) solid 1px;
-  height: 60px;
+  height: 40px;
   width: auto;
   margin: 0;
   padding: 0;
 }
 
+.numpads-function-container {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  justify-content: center;
+  align-content: center;
+  padding: 5px;
+}
+
 .numpads {
   display: grid;
   grid-template-columns: auto auto auto;
+  height: 250px;
+  width: 345px;
 }
 
-.buttons button {
+.numpads button {
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 50px;
   padding-right: 50px;
   font-size: large;
 }
-.buttons button:active {
-  transform: translate(0px, 5px);
-  -webkit-transform: translate(0px, 5px);
-  box-shadow: 0px 1px 0px 0px;
-}
-.buttons button:hover {
-  transition: all 0.5s ease-in-out;
+
+.functionBar {
+  display: grid;
+  width: 130px;
+  height: 374px;
+  grid-template-columns: auto;
 }
