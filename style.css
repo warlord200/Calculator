@@ -49,8 +49,47 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: row;
   width: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  border: rgb(255, 6, 6) solid 1px;
+  flex-direction: column;
+  display: flex;
+  width: 500px;
+  height: 450px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column-reverse;
+  border: rgb(255, 6, 6) solid 1px;
+  height: 120px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+.calculatedResult {
+  border: rgb(255, 6, 6) solid 1px;
+  height: 40px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.currentInput {
+  border: rgb(255, 6, 6) solid 1px;
+  height: 60px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.numpads {
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 .buttons button {
